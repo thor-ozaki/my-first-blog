@@ -1,6 +1,5 @@
 {% extends 'blog/base.html' %}
 
-
 <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
 
 <hr>
@@ -21,6 +20,7 @@
 {% empty %}
     <p>No comments here yet :(</p>
 {% endfor %}
+
 
 
 {% block content %}
